@@ -77,7 +77,7 @@ for %%F in ("%thisBatDir%*.ahk") do (
     set /a index+=1
     set "fileList=!fileList!%%F (File !index!)"
     set "file[!index!]=%%F"
-    set "ico[!index!]=%%F.ico"
+    set "ico[!index!]=%%~nF.ico"
     set "foundMultiple=true"
 )
 

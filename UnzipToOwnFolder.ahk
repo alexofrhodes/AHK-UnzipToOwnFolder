@@ -1,7 +1,7 @@
 ﻿IniFile := "config.ini"
 Section := "Settings"
 Key := "Hotkey"
-
+Menu, Tray, Icon , UnzipToOwnFolder.ico
 ; Create INI with default hotkey if missing
 IfNotExist, %IniFile%
     IniWrite, F1, %IniFile%, %Section%, %Key%
